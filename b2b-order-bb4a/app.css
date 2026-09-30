@@ -34,8 +34,10 @@ button,input,select{font:inherit;color:inherit}
 /* ---------- top bar ---------- */
 .top{position:sticky;top:0;z-index:var(--z-top);height:48px;background:var(--nav);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 16px;gap:12px}
 .top-l,.top-r{display:flex;align-items:center;gap:12px;min-width:0}
-.logo{display:inline-flex;align-items:center;justify-content:center;width:64px;height:24px;background:#c9ced6;color:#5b6372;font-size:12px;font-weight:700;letter-spacing:.08em;border-radius:2px}
-.login .logo{background:#d7dbe2}
+.logo{display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:15px;font-weight:800;letter-spacing:.04em;white-space:nowrap;line-height:1}
+.logo .mk{width:16px;height:16px;border:2px solid #8fb0ea;position:relative;flex:none}
+.logo .mk::after{content:"";position:absolute;right:-2px;bottom:-2px;width:8px;height:8px;background:#8fb0ea}
+.sysname{padding-left:12px;border-left:1px solid #42557a;font-weight:500!important;color:#d5dcea}
 .sysname{font-weight:600;font-size:14.5px;white-space:nowrap}
 .who{font-size:13px;color:#c8d1e0;white-space:nowrap}
 .role-sel{height:30px;border:1px solid #42557a;background:var(--nav-2);color:#fff;border-radius:var(--radius);padding:0 8px;font-size:13px;cursor:pointer}

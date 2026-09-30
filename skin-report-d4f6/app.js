@@ -236,7 +236,7 @@ function reportHTML(r){
     ZONES.map((z,i)=>'<tr><th>'+z+'</th>'+shown.map(m=>{const j=METRICS.indexOf(m);return '<td>'+r.values[i][j]+'</td>';}).join('')+'</tr>').join('')+
     '<tr><th>평균</th>'+shown.map(m=>'<td class="hl">'+c.metrics[m.k].avg+'</td>').join('')+'</tr></tbody></table></div>':'';
   return '<article class="a4" aria-label="A4 보고서 미리보기">'+
-    '<div class="hd"><h2>피부 진단 결과 보고서</h2><span class="logo" aria-hidden="true">LOGO</span></div>'+
+    '<div class="hd"><h2>피부 진단 결과 보고서</h2><span class="logo"><span class="mk" aria-hidden="true"></span>하늘 피부과 의원</span></div>'+
     '<div class="pinfo"><div class="k">차트번호</div><div class="v">'+r.chart+'</div><div class="k">성명</div><div class="v">'+esc(r.name)+'</div><div class="k">연령·성별</div><div class="v">'+r.age+' / '+r.sex+'</div><div class="k">촬영일</div><div class="v">'+TODAY+'</div>'+
     '<div class="k">피부 타입</div><div class="v">'+esc(k.type||'-')+'</div><div class="k">주요 고민</div><div class="v">'+esc(k.concerns.join(', ')||'-')+'</div><div class="k">진단기</div><div class="v">'+r.dev+'</div><div class="k">담당</div><div class="v">'+esc(k.doctor)+'</div></div>'+
     '<div class="score"><div class="total"><div class="k">종합 점수</div><div class="v">'+c.total+'</div><span class="g">'+c.grade+'</span>'+(prev?'<div class="p">이전 방문 '+r.prev.date+' '+r.prev.total+'점</div>':'')+'</div>'+
@@ -244,7 +244,7 @@ function reportHTML(r){
     zt+
     '<div class="sec"><h3>원장 소견</h3><div class="op">'+esc(k.opinion||'')+'</div></div>'+
     '<div class="sec"><div class="kv"><div class="k">권장 관리</div><div>'+esc(k.care.join(', ')||'-')+'</div><div class="k">다음 방문</div><div>'+esc(k.next||'-')+'</div></div></div>'+
-    '<div class="ft"><span>점수는 본원 산식(예시)으로 계산했으며 진단서가 아닙니다.</span><span>(의원명)</span></div>'+
+    '<div class="ft"><span>점수는 본원 산식(예시)으로 계산했으며 진단서가 아닙니다.</span><span>하늘 피부과 의원</span></div>'+
   '</article>';
 }
 function stepReport(r){

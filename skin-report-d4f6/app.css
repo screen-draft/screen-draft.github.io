@@ -22,7 +22,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* top */
 .top{position:sticky;top:0;z-index:var(--z-top);height:52px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 16px;gap:12px}
 .top-l,.top-r{display:flex;align-items:center;gap:12px;min-width:0}
-.logo{display:inline-flex;align-items:center;justify-content:center;width:64px;height:26px;background:#d5d9d9;color:#5d6666;font-size:12px;font-weight:700;letter-spacing:.08em;border-radius:2px}
+.logo{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:16px;font-weight:800;letter-spacing:-.01em;white-space:nowrap;line-height:1}
+.logo .mk{width:18px;height:18px;border-radius:50%;border:2px solid var(--accent);position:relative;flex:none;overflow:hidden}
+.logo .mk::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-2px;height:8px;background:var(--accent)}
+.sysname{padding-left:12px;border-left:1px solid var(--line);font-weight:500!important;color:var(--text-2)}
 .sysname{font-weight:700;font-size:15px;white-space:nowrap}
 .who{font-size:13px;color:var(--muted);white-space:nowrap}
 
@@ -137,7 +140,7 @@ input.w{width:72px;text-align:right;font-variant-numeric:tabular-nums}
 .a4{width:794px;min-height:1123px;background:#fff;margin:0 auto;padding:48px 52px 40px;color:#1b1f1f;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.12);font-variant-numeric:tabular-nums;display:flex;flex-direction:column}
 .a4 .hd{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #1b1f1f;padding-bottom:10px}
 .a4 .hd h2{margin:0;font-size:22px;letter-spacing:.02em}
-.a4 .hd .logo{width:88px;height:30px}
+.a4 .hd .logo{font-size:17px}
 .a4 .pinfo{display:grid;grid-template-columns:repeat(4,auto minmax(0,1fr));border:1px solid #9aa2a2;border-top:0;font-size:12.5px}
 .a4 .pinfo div{padding:5px 8px;border-top:1px solid #9aa2a2}
 .a4 .pinfo .k{background:#f1f3f3;font-weight:600;border-right:1px solid #cfd4d4}
@@ -202,6 +205,7 @@ input.w{width:72px;text-align:right;font-variant-numeric:tabular-nums}
   input.f,select.f,textarea.f{font-size:16px}
   .top{padding:0 12px}
   .who{display:none}
+  .sysname{display:none}
   .body{display:block;min-height:0}
   .side{width:auto;border-right:0;border-bottom:1px solid var(--line);padding:0;display:flex;overflow-x:auto;white-space:nowrap;position:sticky;top:52px;z-index:10}
   .side a{height:44px;border-left:0;border-bottom:3px solid transparent;padding:0 14px;flex:none}
@@ -237,6 +241,7 @@ input.w{width:72px;text-align:right;font-variant-numeric:tabular-nums}
   .rl .t td[data-k]::before{content:attr(data-k);color:var(--muted);font-size:12.5px;margin-right:6px}
   .rl .t td.r,.rl .t td.stc{text-align:right}
   .rl .t td.full{grid-column:1 / -1}
+  .rl .t td.r:last-child{grid-column:1 / -1;text-align:right}
   .rl .t td.hide-m{display:none}
   .tw.rl{border-width:1px 0 0}
 }

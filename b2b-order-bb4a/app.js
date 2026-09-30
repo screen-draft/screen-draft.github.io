@@ -175,7 +175,7 @@ function linesSummary(lines){const f=S.products[lines[0].pid].name;return lines.
 /* ===== login ===== */
 function renderLogin(){
   $('app').hidden=true; $('login').hidden=false;
-  $('login').innerHTML='<div class="login"><div class="login-top"><span class="logo" aria-hidden="true">LOGO</span><span>거래처 주문 시스템</span></div>'+
+  $('login').innerHTML='<div class="login"><div class="login-top"><span class="logo"><span class="mk" aria-hidden="true"></span>B2B ORDER</span><span>거래처 주문 시스템</span></div>'+
   '<div class="login-wrap"><div class="login-box"><div class="in"><h1>기업 거래처 로그인</h1><p class="lead">사업자 등록을 마친 거래처만 이용할 수 있습니다.</p>'+
   '<div class="fld"><label for="lid">아이디</label><input id="lid" class="f" disabled placeholder="시연에서는 입력하지 않습니다"></div>'+
   '<div class="fld"><label for="lpw">비밀번호</label><input id="lpw" class="f" type="password" disabled></div>'+
