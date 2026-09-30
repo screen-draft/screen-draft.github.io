@@ -339,4 +339,5 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
   .rl-kv .t td.hide-m{display:none}
 }
 @media (min-width:721px){.m-only{display:none}}
-@media print{.top,.side,.foot,.guide,.ph-actions,.acts,.bar{display:none!important}main{padding:0}}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}.top,.side,.foot,.guide,.ph-actions,.acts,.bar{display:none!important}main{padding:0}}

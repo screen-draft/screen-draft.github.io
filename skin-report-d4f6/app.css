@@ -247,6 +247,7 @@ input.w{width:72px;text-align:right;font-variant-numeric:tabular-nums}
 }
 @page{size:A4;margin:0}
 @media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body > *:not(#printHost){display:none!important}
   #printHost{display:block!important}
   #printHost .a4{box-shadow:none;margin:0;width:210mm;min-height:297mm}
