@@ -195,7 +195,7 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
 
 /* ---------- empty ---------- */
 .empty{border:1px dashed var(--line);padding:32px 16px;text-align:center;color:var(--text-2);display:flex;flex-direction:column;align-items:center;gap:8px}
-.empty .i{width:28px;height:28px;color:#9aa3b1}
+.empty > .i{width:28px;height:28px;color:#9aa3b1}
 .empty strong{font-size:15px;color:var(--text)}
 .empty p{margin:0 0 6px;font-size:13.5px;max-width:420px}
 
