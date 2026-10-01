@@ -252,3 +252,12 @@ input.w{width:72px;text-align:right;font-variant-numeric:tabular-nums}
   #printHost{display:block!important}
   #printHost .a4{box-shadow:none;margin:0;width:210mm;min-height:297mm}
 }
+
+/* guide dock: 넓은 화면에서는 오른쪽 위에 붙이고, 접으면 아래 안내 줄 위로 내린다 */
+@media (min-width:1101px){
+  .guide{top:68px;bottom:auto}
+  .guide.closed{top:auto;bottom:52px}
+}
+@media (max-width:1100px){.foot{padding-right:132px}}
+/* sr containment: 숨김 라벨이 표 스크롤 영역 밖으로 나가 페이지 폭을 넓히지 않게 한다 */
+.tw,.a4wrap,.podoc,.qdoc{position:relative}
