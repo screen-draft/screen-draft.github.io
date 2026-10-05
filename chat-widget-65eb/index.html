@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:,">
+<title>챗봇 창 시안</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<!-- 여기부터 귀사 웹사이트 자리 (예시) -->
+<header class="site-hd">
+  <div class="wrap hd-in">
+    <span class="logo"><span class="mk" aria-hidden="true"></span>OUR COMPANY</span>
+    <nav class="gnb" aria-label="사이트 메뉴"><a href="#about">회사 소개</a><a href="#biz">사업 분야</a><a href="#data">자료실</a><a href="#support">고객 지원</a></nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="intro wrap">
+    <p class="crumb">귀사 웹사이트 자리 (예시 페이지)</p>
+    <h1>기존 페이지는 그대로 두고 오른쪽 아래에 상담 창만 붙입니다.</h1>
+    <p class="lead">오른쪽 아래 상담 아이콘을 눌러 질문해 보세요. 답변은 미리 정한 예시이며, 실제 연결 뒤에는 준비하신 AI API의 답변이 같은 자리에 나옵니다.</p>
+  </section>
+
+  <section class="wrap two" id="about">
+    <div>
+      <h2>회사 소개</h2>
+      <p>이 영역은 귀사 홈페이지의 기존 내용이 들어가는 자리입니다. 챗봇 창은 이 페이지의 화면 구성이나 코드를 바꾸지 않고, 페이지 맨 아래에 스크립트 한 줄을 넣어 붙습니다.</p>
+      <h2 id="support">고객 지원 안내</h2>
+      <table class="info">
+        <tbody>
+          <tr><th>운영 시간</th><td>평일 09:00 ~ 18:00 (예시)</td></tr>
+          <tr><th>점심 시간</th><td>12:00 ~ 13:00</td></tr>
+          <tr><th>휴무</th><td>주말, 공휴일</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h2 id="biz">적용 방법</h2>
+      <p>사이트의 모든 페이지 공통 영역에 아래 한 줄을 넣으면 상담 창이 붙습니다.</p>
+      <pre class="code" tabindex="0"><code>&lt;script src="https://(배포 주소)/chat.js" defer&gt;&lt;/script&gt;</code></pre>
+      <h2 id="data">AI API 접속 키 보호</h2>
+      <p>AI API에 접속 키가 필요하면 키를 화면 코드에 넣지 않습니다. 화면에 들어간 키는 방문자 누구나 볼 수 있어 사용료가 도용될 수 있기 때문입니다. 작은 중계 서버가 키를 보관하고 대신 호출합니다.</p>
+      <div class="flow" role="img" aria-label="방문자 브라우저에서 중계 서버를 거쳐 AI API로 가는 흐름">
+        <span>방문자 브라우저<small>키 없음</small></span><span class="ar" aria-hidden="true">&rarr;</span><span>중계 서버<small>키 보관, 호출 횟수 제한</small></span><span class="ar" aria-hidden="true">&rarr;</span><span>귀사 AI API</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-ft">
+  <div class="wrap">시연용 예시입니다. 실제 AI API는 연결하지 않았으며, 답변은 미리 정한 예시입니다.</div>
+</footer>
+<!-- 귀사 웹사이트 자리 끝 -->
+
+<aside class="guide" id="guide" aria-label="시연 안내"></aside>
+<script src="guide.js" defer></script>
+
+<!-- 사이트에 실제로 넣는 것은 아래 한 줄입니다 -->
+<script src="chat.js" defer></script>
+</body>
+</html>
