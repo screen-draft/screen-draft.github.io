@@ -705,3 +705,18 @@ body.has-tray .toast-host{bottom:96px}
   .shop .nm button,.rowpick{min-height:44px}
   .hs .tcard input.f{height:44px!important}
 }
+/* 문의 스레드 · 입력 */
+main:focus,main:focus-visible{outline:none}
+.meta2{font-size:14px;color:var(--text-2);margin:2px 0}
+.thread{display:flex;flex-direction:column;gap:10px;min-height:200px}
+.msg{max-width:72%;padding:10px 14px;background:#fff;border:1px solid var(--line-1);border-radius:8px;font-size:15px;white-space:pre-wrap;align-self:flex-start}
+.msg.me{align-self:flex-end;background:var(--accent);color:#fff;border-color:var(--accent)}
+.msg small{display:block;font-size:12px;opacity:.75;margin-top:4px}
+.composer{display:flex;gap:8px;align-items:flex-end;margin-top:12px}
+.composer textarea{flex:1;min-width:0;border:1px solid var(--line-2);border-radius:6px;padding:12px 14px;font:inherit;font-size:15px;line-height:1.5;resize:vertical;min-height:52px;background:#fff;color:var(--text)}
+.composer textarea:focus{outline:none;border-color:var(--accent)}
+.composer .btn{height:52px;padding:0 20px;font-size:15px;flex:none}
+#firstMsg{min-height:120px}
+.cmp td{vertical-align:top;min-width:180px}
+textarea.f{font:inherit;font-size:15px;border:1px solid var(--line-2);border-radius:6px;padding:10px 12px;line-height:1.5}
+@media (max-width:720px){.msg{max-width:88%}.composer .btn{padding:0 14px}}
