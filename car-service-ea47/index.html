@@ -5,19 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="data:,">
-<title>자동차 서비스 탐색 시안</title>
+<title>CARISEL 서비스·시공 탐색 시안</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
-<header class="hd"><div class="hd-in">
-  <span class="logo"><span class="mk" aria-hidden="true"></span>CARISEL</span><span class="sysname">자동차 서비스·시공 탐색 1차 시안</span>
-  <span class="sp"></span>
-  <span id="carchip"></span>
-  <div class="role"><label for="roleSel">보는 사람</label><select id="roleSel"><option value="c">소비자</option><option value="a">업체 A (승인됨)</option><option value="b">업체 B (승인 대기)</option><option value="m">관리자</option></select></div>
-</div></header>
+<header class="hd" id="hd"></header>
 <div id="root"></div>
 <footer class="foot">시연용 예시 데이터입니다. 업체, 시공사례, 후기는 예시이며 실제 연동과 결제는 없습니다.</footer>
 <aside class="guide" id="guide" aria-label="시연 안내"></aside>
@@ -51,6 +46,12 @@
   <symbol id="i-layout" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 10h16M10 10v10"/></symbol>
   <symbol id="i-tree" viewBox="0 0 24 24"><path d="M6 4v16M6 8h6M6 14h6M15 6h5v4h-5zM15 12h5v4h-5z"/></symbol>
   <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M3 7l2-4h14l2 4M3 7a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></symbol>
+  <symbol id="i-seal" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l2.4 2.1 3.2-.3.9 3.1 2.8 1.6-1.2 3 1.2 3-2.8 1.6-.9 3.1-3.2-.3L12 22l-2.4-2.1-3.2.3-.9-3.1-2.8-1.6 1.2-3-1.2-3 2.8-1.6.9-3.1 3.2.3z"/><path d="M8.5 12.2l2.3 2.3 4.7-4.8" stroke="#fff" stroke-width="2"/></symbol>
+  <symbol id="i-ax-parts" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7M17 15l3 3-3 3"/></symbol>
+  <symbol id="i-ax-goods" viewBox="0 0 24 24"><path d="M5 8h14l-1.5 11h-11zM9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-ax-find" viewBox="0 0 24 24"><path d="M12 18h.01M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7v.5M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/></symbol>
+  <symbol id="i-ax-carid" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM7 10h4M7 14h6M16 10h2"/></symbol>
+  <symbol id="i-ax-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
 </svg>
 <script src="app.js"></script>
 </body>
