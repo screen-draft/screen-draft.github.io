@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>머뭄장부 운영 콘솔</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><rect x="1" y="1" width="24" height="24" rx="2" fill="#2F4F66"/><path d="M7 7.5h12M7 12h12M7 16.5h7" stroke="#fff" stroke-width="2" stroke-linecap="square"/><path d="M17 15.5l1.6 1.6 3-3.4" stroke="#BFD0DC" stroke-width="1.8" fill="none"/></svg>
+      <span class="brand-name">머뭄장부</span>
+      <span class="brand-sub">운영 콘솔</span>
+    </div>
+    <nav class="nav" id="nav" aria-label="주 메뉴"></nav>
+    <div class="side-meta" id="sideMeta"></div>
+  </aside>
+  <div class="body">
+    <header class="top">
+      <div class="crumb" id="crumb"></div>
+      <div class="who">
+        <label for="acct">보는 계정</label>
+        <select id="acct">
+          <option value="A">업체 A 운영자 · ○○스테이</option>
+          <option value="B">업체 B 운영자 · △△하우스</option>
+          <option value="SA">슈퍼어드민</option>
+        </select>
+        <span class="who-id" id="whoId"></span>
+      </div>
+      <div class="bar" aria-hidden="true"></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+
+<aside id="guide" aria-label="시연 안내"></aside>
+<div class="foot-line">화면의 업체·숙소·예약·사람·키는 모두 시연용 예시 데이터입니다.</div>
+<div id="busy" role="status" aria-live="polite" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+<div id="dlg" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
