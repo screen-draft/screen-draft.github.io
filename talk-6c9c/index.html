@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:,">
+<title>결따라 | 업체 상담</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand" aria-label="결따라 업체 상담">
+    <svg class="logo" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="5" fill="#6E4B32"/><path d="M6.5 9.5c3.5-2.2 7.5 1.8 15 0M6.5 14.2c3.5-2.2 7.5 1.8 15 0M6.5 18.9c3.5-2.2 7.5 1.8 15 0" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+    <b>결따라</b><span class="sep" aria-hidden="true"></span><span class="sub">업체 상담</span>
+  </div>
+  <nav class="views" aria-label="보는 화면">
+    <span class="views-l">보는 화면</span>
+    <button type="button" data-act="view" data-id="chat">고객 채팅</button>
+    <button type="button" data-act="view" data-id="admin">업체 관리</button>
+    <button type="button" data-act="view" data-id="ops">운영자</button>
+  </nav>
+</header>
+<div class="page">
+  <div class="intro">
+    <p>업체가 등록한 정보만 근거로 답하고, 없으면 담당자에게 넘기며, 다른 업체 정보는 나오지 않는 상담 챗봇 화면 시안입니다.</p>
+    <p>업체·대화·수치는 모두 예시입니다. 답변은 동작 방식을 보여 주기 위해 미리 준비한 예시이며 실제 AI 호출이 아닙니다.</p>
+  </div>
+  <main id="app"></main>
+</div>
+<aside id="guide" aria-label="시연 안내"></aside>
+<div id="busy" role="status" hidden></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<footer class="foot">시연용 예시 데이터 · 답변은 동작 방식을 보여 주기 위해 미리 준비한 예시이며 실제 AI 호출이 아닙니다.</footer>
+<script src="app.js"></script>
+</body>
+</html>
