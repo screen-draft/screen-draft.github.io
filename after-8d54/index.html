@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:,">
+<title>여밈 | 사후 행정·생활정리 안내 (시안)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="logo" aria-label="여밈 사후 행정·생활정리 안내">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><circle cx="10.5" cy="14" r="6.5"/><circle cx="17.5" cy="14" r="6.5"/></svg>
+      <b>여밈</b><span class="sep" aria-hidden="true"></span><span class="sub">사후 행정·생활정리 안내</span>
+    </div>
+    <div class="roles" role="group" aria-label="보는 역할">
+      <span class="roles-l">보는 역할</span>
+      <button type="button" data-act="role" data-id="user">이용자</button>
+      <button type="button" data-act="role" data-id="partner">전문 파트너</button>
+      <button type="button" data-act="role" data-id="admin">관리자</button>
+    </div>
+  </div>
+</header>
+<section class="intro">
+  <p>유족이 올린 안심상속 결과지를 읽어 원문과 나란히 확인하고, 확인된 항목으로 체크리스트·서비스 분야 안내·전문 파트너 상담까지 잇는 화면 시안입니다.</p>
+  <p>문서, 인물(김○○), 기관(○○은행 등), 금액과 기한은 모두 예시이며 실제 문서 판독(OCR·AI)은 호출하지 않습니다.</p>
+</section>
+<div class="wrap">
+  <nav id="nav" aria-label="화면"></nav>
+  <main id="main"></main>
+</div>
+<aside id="guide" class="guide" aria-label="시연 안내"></aside>
+<footer class="foot"><span class="fl">시연용 예시 데이터입니다. 문서 판독은 예시 값으로 재현했고, 기한·업무는 법률·세무 판단이 아닌 예시입니다.</span><span class="fs">시연용 예시 데이터 · 판독·기한은 예시</span></footer>
+<div id="busy" class="busy" hidden><div class="busy-box"><span class="spin" aria-hidden="true"></span><span id="busyMsg">처리 중...</span></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
